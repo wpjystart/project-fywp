@@ -1,0 +1,52 @@
+[
+  {
+    "swiPer":[
+      {"imGs":"../images/index05.png"},
+      {"imGs":"../images/index04.png"},
+      {"imGs":"../images/index05.png"},
+      {"imGs":"../images/index04.png"},
+      {"imGs":"../images/index05.png"}
+    ],
+      "swiPer1":[
+        {"imGs1":"../images/index04.png"},
+        {"imGs1":"../images/index05.png"},
+        {"imGs1":"../images/index04.png"},
+        {"imGs1":"../images/index05.png"},
+        {"imGs1":"../images/index04.png"}
+      ]
+},
+  {
+    "shangName":[
+    {"title":"格拉苏蒂·莫勒","title1":"MUEHLE·GLASHUETTE"},
+    {"title":"欧米茄","title1":"OMEGA"},
+    {"title":"阿玛尼","title1":"ARMANI"},
+    {"title":"柏高","title1":"PAUL PICOT"},
+    {"title":"卡西欧","title1":"CASIO"},
+    {"title":"天铭","title1":"TIMING"},
+    {"title":"美度","title1":"MIDO"},
+    {"title":"菲拉格慕","title1":"FERRAGAMO"},
+    {"title":"帝舵","title1":"TUDOR"}
+  ]
+},
+  {
+    "biaoXiangQ":[
+      {"xuanC":"天文台认证","bname":"美度 贝伦赛丽系列","image":"../images/index04.png"},
+      {"xuanC":"限量5.9折","bname":"天梭 T-TREND系列","image":"../images/index04.png"},
+      {"xuanC":"限量赠送表带","bname":"莫勒 航海领域的专业时计","image":"../images/index04.png"},
+      {"xuanC":"限时4.2折,直降2700元","bname":"天铭 机械月相蓝盘","image":"../images/index04.png"},
+      {"xuanC":"分期月付109元","bname":"精工 计时码表系列","image":"../images/index04.png"},
+      {"xuanC":"限时4.5折","bname":"优立时 歌德系列","image":"../images/index04.png"},
+    ]
+  },
+  {
+    "biaoZhongL":[
+      {"imageZ":"../images/index04.png","nameZ":"浪琴","nameZ1":"名匠","priveZ":"￥12,320"},
+      {"imageZ":"../images/index04.png","nameZ":"欧米茄","nameZ1":"海马","priveZ":"￥26,560"},
+      {"imageZ":"../images/index04.png","nameZ":"百年灵","nameZ1":"超级海洋","priveZ":"￥20,008"},
+      {"imageZ":"../images/index04.png","nameZ":"万国","nameZ1":"柏涛菲诺","priveZ":"￥29,568"},
+      {"imageZ":"../images/index04.png","nameZ":"浪琴","nameZ1":"名匠","priveZ":"￥20,000"},
+      {"imageZ":"../images/index04.png","nameZ":"积家","nameZ1":"Master Control","priveZ":"￥59,400"}
+    ]
+  }
+]
+
