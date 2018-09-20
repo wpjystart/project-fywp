@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 import $ from 'jquery'
 import '@/assets/css/iconfont.css'
+import 'swiper/dist/css/swiper.css'
+
 // 公共样式
 import '@/assets/css/reset.css'
 

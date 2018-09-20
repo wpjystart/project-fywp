@@ -45,10 +45,10 @@ footer{
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
   }
 .footer_one .icon-fangzi{
-  font-size: 0.2rem;
+  font-size: 0.16rem;
   color:#7a7a7a;
 }
 .footer_one p{

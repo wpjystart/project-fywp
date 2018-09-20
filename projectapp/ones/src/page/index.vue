@@ -1,9 +1,7 @@
 <template>
   <div class="box">
     <index-Header></index-Header>
-    <div class="sectIona">
-       <index-Section></index-Section>
-    </div>
+    <index-Section class="sectIona"></index-Section>
     <index-Footer></index-Footer>
   </div>
 </template>
@@ -20,10 +18,9 @@
 
 <style scoped>
   .box{
-    /*height: 100%;*/
+    height: 100%;
     display: flex;
     flex-flow:column;
-    justify-content: space-between;
   }
 .sectIona{
   height: 100%;

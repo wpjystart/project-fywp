@@ -1,44 +1,68 @@
 <template>
-  <div class="swipers">
-      <div class="swiper_a">
-        <img src="../../../static/index04.png" alt="">
+  <div >
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../../../static/index04.png" alt=""></div>
+          <div class="swiper-slide"><img src="../../../static/index05.png" alt=""></div>
+          <div class="swiper-slide"><img src="../../../static/index04.png" alt=""></div>
+          <div class="swiper-slide"><img src="../../../static/index05.png" alt=""></div>
       </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+    </div>
+
       <div class="swiper_b">
           <p>品&nbsp&nbsp&nbsp牌</p>
           <img src="../../../static/index06.png" alt="">
       </div>
-    <div class="swiper_c">
-    <img src="../../../static/index05.png" alt="">
-  </div>
-    <div class="swiper_c">
-      <img src="../../../static/index05.png" alt="">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../../../static/index05.png" alt=""></div>
+        <div class="swiper-slide"><img src="../../../static/index04.png" alt=""></div>
+        <div class="swiper-slide"><img src="../../../static/index05.png" alt=""></div>
+        <div class="swiper-slide"><img src="../../../static/index04.png" alt=""></div>
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="swiper_c">
-      <img src="../../../static/index05.png" alt="">
-    </div>
+
   </div>
 
 
 </template>
 
 <script>
+  import Swiper from "swiper"
+  import "swiper/dist/css/swiper.css"
     export default {
-        name: "indexSectionSwper"
+        name: "indexSectionSwper",
+       mounted(){
+         var mySwiper = new Swiper ('.swiper-container', {
+           direction: 'horizontal',
+           speed:300,
+           autoplay : {
+             delay:3000
+           },
+           loop: true,
+
+           // 如果需要分页器
+           pagination: {
+             el: '.swiper-pagination',
+           }
+         })
+       }
     }
 </script>
 
 
 
 <style scoped>
-  .swipers{
-    position: relative;
-  }
-
-.swiper_a{
+.swiper-container{
+  width: 3.75rem;
   height:2.5rem;
 }
-.swiper_a img{
-  width: 100%;
+.swiper-wrapper img{
+  width: 3.75rem;
   height:2.5rem;
 }
 .swiper_b{
