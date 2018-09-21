@@ -13,6 +13,17 @@
     export default {
         name: "index",
       components: {IndexFooter, IndexSection, IndexHeader},
+      created(){
+        let _this = this;
+        fetch('./src/static/data.json').then(function(res){
+          return res.json();
+        }).then(function(stories){
+          console.log(stories)
+          _this.items = stories;
+        }).then(function(err){
+          console.log(err)
+        })
+      }
     }
 </script>
 
