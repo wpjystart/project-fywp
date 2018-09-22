@@ -5,6 +5,7 @@ import Index from '../page/index'
 import Details from '../page/details'
 import my from '../page/my'
 
+
 Vue.use(Router)
 export default new Router({
   routes: [
