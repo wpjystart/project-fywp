@@ -4,7 +4,7 @@ import Router from 'vue-router'
 import Index from '../page/index'
 import Details from '../page/details'
 import my from '../page/my'
-
+import OrderForm from '../page/OrderForm'
 
 Vue.use(Router)
 export default new Router({
@@ -28,6 +28,11 @@ export default new Router({
       path: '/my',
       name: 'my',
       component: my
+    },
+    {
+      path: '/OrderForm',
+      name: 'OrderForm',
+      component: OrderForm
     },
   ]
 })
