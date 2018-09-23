@@ -30,6 +30,7 @@
     font-size: 0.16rem;
     color: #444444;
     background: #ffffff;
+    margin-bottom: 0.06rem;
   }
   .OrderFormHeaderLeft{
     width: 0.44rem;
