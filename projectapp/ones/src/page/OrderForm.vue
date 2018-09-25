@@ -6,7 +6,9 @@
         <OrderFormShop></OrderFormShop>
         <OrderFormLeaveWord></OrderFormLeaveWord>
         <OrderFormInvoice></OrderFormInvoice>
+        <OrderFormCentre></OrderFormCentre>
       </div>
+      <OrderFormFooter></OrderFormFooter>
     </div>
 </template>
 
@@ -16,6 +18,8 @@
   import OrderFormShop from '../components/OrderForm/OrderFormShop'
   import OrderFormLeaveWord from '../components/OrderForm/OrderFormLeaveWord'
   import OrderFormInvoice from '../components/OrderForm/OrderFormInvoice'
+  import OrderFormCentre from '../components/OrderForm/OrderFormCentre'
+  import OrderFormFooter from '../components/OrderForm/OrderFormFooter'
     export default {
         name: "OrderForm",
       components:{
@@ -24,6 +28,8 @@
         OrderFormShop,
         OrderFormLeaveWord,
         OrderFormInvoice,
+        OrderFormCentre,
+        OrderFormFooter,
       }
     }
 </script>
