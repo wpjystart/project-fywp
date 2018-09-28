@@ -2,30 +2,14 @@
   <div>
     <div class="Bottom">
       <div class="bota">
-        <div class="bota_one">
+        <div class="bota_one" v-for="bdv in btm1" :key="bdv.id">
           <p>闪购</p>
-          <h4>jfyuguy</h4>
-          <h5>jguiihilj</h5>
-          <img src="../../../static/index11.png" alt="">
+          <h4>{{bdv.xuanC}}</h4>
+          <h5>{{bdv.bname}}</h5>
+          <img :src="bdv.image" alt="">
         </div>
-        <div class="bota_one">
-          <p>闪购</p>
-          <h4>jfyuguy</h4>
-          <h5>jguiihilj</h5>
-          <img src="../../../static/index12.png" alt="">
-        </div>
-        <div class="bota_one">
-          <p>闪购</p>
-          <h4>jfyuguy</h4>
-          <h5>jguiihilj</h5>
-          <img src="../../../static/index11.png" alt="">
-        </div>
-        <div class="bota_one">
-          <p>闪购</p>
-          <h4>jfyuguy</h4>
-          <h5>jguiihilj</h5>
-          <img src="../../../static/index12.png" alt="">
-        </div>
+
+
       </div>
       <div class="swiper_b">
         <p>品&nbsp&nbsp&nbsp牌</p>
@@ -37,25 +21,10 @@
     </div>
     <div class="Bottom Bottom_two">
       <div class="bota bota_a">
-        <div class="bota_one bota_two">
-          <img src="../../../static/index15.png" alt="">
-          <h4>jfyuguy</h4>
-          <h5>jguiihilj</h5>
-        </div>
-        <div class="bota_one bota_two">
-          <img src="../../../static/index16.png" alt="">
-          <h4>jfyuguy</h4>
-          <h5>jguiihilj</h5>
-        </div>
-        <div class="bota_one bota_two">
-          <img src="../../../static/index15.png" alt="">
-          <h4>jfyuguy</h4>
-          <h5>jguiihilj</h5>
-        </div>
-        <div class="bota_one bota_two">
-          <img src="../../../static/index16.png" alt="">
-          <h4>jfyuguy</h4>
-          <h5>jguiihilj</h5>
+        <div class="bota_one bota_two" v-for="bdv1 in btb" :key="bdv1.id">
+          <img :src="bdv1.image1" alt="">
+          <h4>{{bdv1.bname1}}</h4>
+          <h5>{{bdv1.xuanC1}}</h5>
         </div>
       </div>
       <div class="swiper_b">
@@ -72,42 +41,12 @@
       <span></span>
     </div>
     <div class="bottom_three">
-      <div class="bot_t_one">
-          <img src="../../../static/index17.png" alt="">
-          <p>jhgjh</p>
-          <p>kjhjk</p>
-          <span>￥35465</span>
+      <div class="bot_t_one" v-for="bdiv in btm2" :key="bdiv.id">
+          <img :src="bdiv.imageZ" alt="">
+          <p>{{bdiv.nameZ}}</p>
+          <p>{{bdiv.nameZ1}}</p>
+          <span>{{bdiv.priveZ}}</span>
         </div>
-      <div class="bot_t_one">
-        <img src="../../../static/index17.png" alt="">
-        <p>jhgjh</p>
-        <p>kjhjk</p>
-        <span>￥35465</span>
-      </div>
-      <div class="bot_t_one">
-        <img src="../../../static/index17.png" alt="">
-        <p>jhgjh</p>
-        <p>kjhjk</p>
-        <span>￥35465</span>
-      </div>
-      <div class="bot_t_one">
-        <img src="../../../static/index17.png" alt="">
-        <p>jhgjh</p>
-        <p>kjhjk</p>
-        <span>￥35465</span>
-      </div>
-      <div class="bot_t_one">
-        <img src="../../../static/index17.png" alt="">
-        <p>jhgjh</p>
-        <p>kjhjk</p>
-        <span>￥35465</span>
-      </div>
-      <div class="bot_t_one">
-        <img src="../../../static/index17.png" alt="">
-        <p>jhgjh</p>
-        <p>kjhjk</p>
-        <span>￥35465</span>
-      </div>
     </div>
   </div>
 
@@ -115,7 +54,12 @@
 
 <script>
     export default {
-        name: "indexSectionBottom"
+        name: "indexSectionBottom",
+      props:["btm1","btm2","btb"],
+      created(){
+          // console.log(this.btm1)
+          // console.log(this.btm2)
+      }
     }
 </script>
 
@@ -125,16 +69,18 @@
     margin-top:0.16rem ;
   }
   .bota{
-    /*width: 100%;*/
-    width: 3.75rem;
+    width: 100%;
     height: 2.12rem;
     display: flex;
     overflow-x: scroll;
     white-space: nowrap;
     flex-wrap: nowrap;
+    padding-left:.08rem;
+    box-sizing: border-box;
   }
   .bota_one{
-    width: 1.56rem;
+    width: 40%;
+    padding:0 .25rem;
     height: 2.12rem;
     background-color: #f2f2f2;
     border-radius: 5px;
@@ -203,6 +149,7 @@
     height: 1.94rem;
     background-color: #fff;
     margin-right: 0.28rem;
+    padding: 0;
   }
   .bota_two h4{
     font-size: 0.12rem;

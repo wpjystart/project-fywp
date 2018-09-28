@@ -1,48 +1,23 @@
 <template>
     <div class="center">
       <div class="center_a">
-        <div class="center_a_one">
-            <p>格拉舒弟·数据库的和</p>
-            <span>fjkhasfdhasjkfhsdf</span>
-        </div>
-        <div class="center_a_one">
-          <p>格拉舒弟·数据库的和</p>
-          <span>fjkhasfdhasjkfhsdf</span>
-        </div>
-        <div class="center_a_one">
-          <p>格拉舒弟·数据库的和</p>
-          <span>fjkhasfdhasjkfhsdf</span>
+        <div class="center_a_one" v-for="dv in tmc.shangName1" :key="dv.id">
+            <p>{{dv.title}}</p>
+            <span>{{dv.title1}}</span>
         </div>
       </div>
       <div class="center_a">
-        <div class="center_a_one">
-          <p>格拉舒弟·数据库的和</p>
-          <span>fjkhasfdhasjkfhsdf</span>
-        </div>
-        <div class="center_a_one">
-          <p>格拉舒弟·数据库的和</p>
-          <span>fjkhasfdhasjkfhsdf</span>
-        </div>
-        <div class="center_a_one">
-          <p>格拉舒弟·数据库的和</p>
-          <span>fjkhasfdhasjkfhsdf</span>
+        <div class="center_a_one"  v-for="dv in tmc.shangName2" :key="dv.id">
+          <p>{{dv.title}}</p>
+          <span>{{dv.title1}}</span>
         </div>
       </div>
       <div class="center_a">
-        <div class="center_a_one">
-          <p>格拉舒弟·数据库的和</p>
-          <span>fjkhasfdhasjkfhsdf</span>
-        </div>
-        <div class="center_a_one">
-          <p>格拉舒弟·数据库的和</p>
-          <span>fjkhasfdhasjkfhsdf</span>
-        </div>
-        <div class="center_a_one">
-          <p>格拉舒弟·数据库的和</p>
-          <span>fjkhasfdhasjkfhsdf</span>
+        <div class="center_a_one" v-for="dv in tmc.shangName3" :key="dv.id">
+          <p>{{dv.title}}</p>
+          <span>{{dv.title1}}</span>
         </div>
       </div>
-      <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
       <div class="center_b">
           <div class="swiper_b">
             <p>品&nbsp&nbsp&nbsp牌</p>
@@ -59,7 +34,11 @@
 
 <script>
     export default {
-        name: "indexSectionCenter"
+        name: "indexSectionCenter",
+      props:["tmc"],
+      created(){
+          console.log(this.tmc)
+      }
     }
 </script>
 

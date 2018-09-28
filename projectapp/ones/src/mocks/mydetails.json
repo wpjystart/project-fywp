@@ -1,0 +1,28 @@
+[
+{
+  "swiPer":[
+    {"imgG":"../../static/mydetails.jpg"},
+    {"imgG":"../../static/mydetails1.jpg"},
+    {"imgG":"../../static/mydetails2.jpg"},
+    {"imgG":"../../static/mydetails3.jpg"},
+    {"imgG":"../../static/mydetails.jpg"}
+  ]
+},
+{
+"bName":[
+  {"name":"天梭TISSOT-运动系列 T043.010.22.11.00 石英表","kuanShi":"潮流腕表 时尚气质款","price":"￥2035","yuanJ":"￥3450","xiaoShou":"3354"}
+]
+},
+{
+  "yangShi":[
+    {"style":"钢 白色 PVD镀金 不锈钢1个"},
+    {"fuKuan":"每期170元×12期"}
+  ]
+},
+{
+ "renQi":[
+   {"rbimG":"../../static/mydateils2.png","rprice":"￥2035"},
+   {"rbimG":"../../static/mydateils3.png","rprice":"￥75"}
+ ]
+}
+]

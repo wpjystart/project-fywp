@@ -2,25 +2,21 @@
   <div >
     <div class="swiper-container">
       <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="../../../static/index04.png" alt=""></div>
-          <div class="swiper-slide"><img src="../../../static/index05.png" alt=""></div>
-          <div class="swiper-slide"><img src="../../../static/index04.png" alt=""></div>
-          <div class="swiper-slide"><img src="../../../static/index05.png" alt=""></div>
+          <div class="swiper-slide" v-for="i in swp1" :key="i.id"><img :src="i.imGs" alt=""></div>
       </div>
       <!-- 如果需要分页器 -->
       <div class="swiper-pagination"></div>
+
     </div>
 
       <div class="swiper_b">
           <p>品&nbsp&nbsp&nbsp牌</p>
           <img src="../../../static/index06.png" alt="">
       </div>
+
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="../../../static/index05.png" alt=""></div>
-        <div class="swiper-slide"><img src="../../../static/index04.png" alt=""></div>
-        <div class="swiper-slide"><img src="../../../static/index05.png" alt=""></div>
-        <div class="swiper-slide"><img src="../../../static/index04.png" alt=""></div>
+        <div class="swiper-slide" v-for="i1 in swp2" :key="i1.id"><img :src="i1.imG" alt=""></div>
       </div>
       <!-- 如果需要分页器 -->
       <div class="swiper-pagination"></div>
@@ -36,8 +32,13 @@
   import "swiper/dist/css/swiper.css"
     export default {
         name: "indexSectionSwper",
+        props:["swp1","swp2"],
        mounted(){
-         var mySwiper = new Swiper ('.swiper-container', {
+         new Swiper ('.swiper-container', {
+           initialSlide:0,
+           observer:true,
+           observeParents:true,
+
            direction: 'horizontal',
            speed:300,
            autoplay : {
@@ -48,7 +49,7 @@
            // 如果需要分页器
            pagination: {
              el: '.swiper-pagination',
-           }
+         }
          })
        }
     }
