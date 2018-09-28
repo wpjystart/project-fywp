@@ -40,7 +40,6 @@
   }
   .myClassify i{
     display: block;
-    background-size: 443px;
     width: 0.2rem;
     height: 0.2rem;
     margin-bottom: 0.06rem;
